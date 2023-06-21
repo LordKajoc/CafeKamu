@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".UpdateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backupdatenugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_back" />
+
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/backupdatenugas"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_bookmark" />
+
+
+            <EditText
+                android:id="@+id/NewformKodecafenya"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/radius_formwhiteblur"
+                android:elevation="5dp"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat"
+                android:hint="Kd.Cafe"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/poppinssemi"
+                android:gravity="center"
+                android:text="Edit Data Cafe Nugas"
+                android:textColor="#000"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/NewformNamaCafe"
+                android:layout_width="237dp"
+                android:layout_height="49dp"
+                android:layout_below="@id/backupdatenugas"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@+id/NewformKodecafenya"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Nama Cafe"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/NewformAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/NewformNamaCafe"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Alamat"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/NewformLinkGmapupdate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/NewformAlamat"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Link Gmap"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+
+            <EditText
+                android:id="@+id/NewformHargaMaks"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NewformAlamat"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Harga Maksimal"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/NewformRating"
+                android:layout_width="381dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/NewformAlamat"
+                android:layout_marginLeft="-381dp"
+                android:layout_marginTop="197dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/NewformHargaMaks"
+                android:background="@drawable/radius_formwhite"
+                android:drawableRight="@drawable/ic_dwbten"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Rating Cafe"
+                android:inputType="numberDecimal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/NewformDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/NewformHargaMaks"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Deskripsi"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/NewformHargaMulai"
+                android:layout_width="159dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/NewformDeskripsi"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-113dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Harga Minimum"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/Newimage_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_below="@+id/NewformHargaMulai"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="143dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/NewbtnOpen"
+                android:src="@drawable/ic_picimg" />
+
+            <Button
+                android:id="@+id/NewbtnOpen"
+                android:layout_width="245dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/NewformHargaMulai"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="147dp"
+                android:layout_marginRight="30dp"
+                android:alpha="0.90"
+                android:background="@drawable/radius_formwhite"
+                android:drawableRight="@drawable/ic_image"
+                android:fontFamily="@font/poppins"
+                android:paddingRight="15dp"
+                android:text="Select Picture . . ."
+                android:textAllCaps="false"
+                android:textColor="@color/grey" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Newimage_profile"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_btnaksen"
+                android:fontFamily="@font/poppins"
+                android:text="UPDATE DATA CAFE"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".tambahdatacafenongkrong1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/judulcafenongkrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinssemi"
+                android:gravity="center"
+                android:text="Tambah Rekomendasi"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/judulcafenongkrong2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judulcafenongkrong"
+                android:layout_marginTop="-9dp"
+                android:fontFamily="@font/poppinssemi"
+                android:gravity="center"
+                android:text="Cafe Nongkrong"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/piccafenongkrong"
+                android:layout_width="207dp"
+                android:layout_height="94dp"
+                android:layout_below="@id/judulcafenongkrong2"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_smoking_rooms_24" />
+
+            <EditText
+                android:id="@+id/formKodecafenongkrong"
+                android:layout_width="110dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/piccafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Kd.Cafe"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formAlamatcafenongkrong"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formNamaCafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Alamat"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/formLinkGmapCafeNongkrong"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formAlamatcafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Link Gmap"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formHargaMulaicafenongkrong"
+                android:layout_width="176dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formDeskripsicafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-105dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Harga Minimum"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formHargaMakscafenongkrong"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formAlamatcafenongkrong"
+                android:layout_marginLeft="-195dp"
+                android:layout_marginTop="57dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/formAlamatcafenongkrong"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Harga Maksimal"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formDeskripsicafenongkrong"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formHargaMakscafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Deskripsi"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formNamaCafenongkrong"
+                android:layout_width="351dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/piccafenongkrong"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/formKodecafenongkrong"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Nama Cafe"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formRatingcafenongkrong"
+                android:layout_width="381dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/formAlamatcafenongkrong"
+                android:layout_marginLeft="-382dp"
+                android:layout_marginTop="168dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/formHargaMakscafenongkrong"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Rating/10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnOpencafenongkrong"
+                android:layout_width="245dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formHargaMulaicafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="134dp"
+                android:layout_marginRight="30dp"
+                android:alpha="0.90"
+                android:background="@drawable/radius_formwhite"
+                android:drawableRight="@drawable/ic_image"
+                android:fontFamily="@font/poppins"
+                android:paddingRight="15dp"
+                android:text="Select Picture . . ."
+                android:textAllCaps="false"
+                android:textColor="@color/grey" />
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/image_profilecafenongkrong"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:layout_below="@+id/formHargaMulaicafenongkrong"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="119dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/btnOpencafenongkrong"
+                android:src="@drawable/ic_picimg" />
+
+            <Button
+                android:id="@+id/btnSubmitcafenongkrong"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image_profilecafenongkrong"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_btnaksen"
+                android:fontFamily="@font/poppins"
+                android:text="Tambah Data Cafe"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

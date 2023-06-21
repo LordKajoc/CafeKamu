@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:src="@drawable/pic_gambarcafe" />
+    <ImageView
+        android:id="@+id/backdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:gravity="center"
+        android:layout_below="@id/backdetail"
+        android:fontFamily="@font/poppinssemi"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:text="Detail Cafe" />
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/backdetail"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bookmark" />
+
+    <TextView
+        android:id="@+id/TextDetailCafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Detail Cafe Nugas"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/Alamatcafenugasdetailactiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Kodecafedetailactivity"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Alamat Cafe"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/LinkGmapcafenugasdetailactiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Alamatcafenugasdetailactiv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/montserrat"
+        android:text="LinkGmap -"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextNamaCafedetailactiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextDetailCafe"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/Kodecafedetailactivity"
+        android:fontFamily="@font/montserrat"
+        android:text="Nama Cafe "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Kodecafedetailactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextDetailCafe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/montserrat"
+        android:text="02"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/BoxHargaMaks"
+        android:layout_width="174dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/LinkGmapcafenugasdetailactiv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/radius_box"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppinssemi"
+        android:paddingTop="10dp"
+        android:text="1200k"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/BoxRating"
+        android:layout_width="180dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/LinkGmapcafenugasdetailactiv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/BoxHargaMaks"
+        android:background="@drawable/radius_box"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppinssemi"
+        android:paddingTop="10dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HargaMaks"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppinssemi"
+        android:text="Deskripsi Cafe"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/DeskripsiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Deskripsi"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. L"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/MulaiDari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HargaMaks"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="89dp"
+        android:fontFamily="@font/poppinssemi"
+        android:text="Mulai Dari"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HargaDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeskripsiText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_coin"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Rp.00,00"
+        android:textColor="@color/accent2"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/HargaDetail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/radius_btnaksen"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Data Cafe"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/HargaMaks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BoxHargaMaks"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="-33dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Harga Maksimum"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BoxHargaMaks"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="-28dp"
+        android:layout_toRightOf="@id/HargaMaks"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Rating /10"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

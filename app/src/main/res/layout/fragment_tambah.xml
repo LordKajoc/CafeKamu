@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahFragment"
+    android:background="@color/main"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinssemi"
+                android:gravity="center"
+                android:text="Pilih Kategori Cafe"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/btncafenugastf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/judul"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_btnaksen"
+                android:fontFamily="@font/poppins"
+                android:text="Cafe Nugas"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btncafenongkrongtf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btncafenugastf"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_btnaksen"
+                android:fontFamily="@font/poppins"
+                android:text="Cafe Nongkrong"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

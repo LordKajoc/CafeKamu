@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="-40dp"
+            android:src="@drawable/pic_tokobaru" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemi"
+            android:gravity="center"
+            android:text="CafeKamu"
+            android:textColor="#000"
+            android:layout_below="@+id/pic"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserratthin"
+            android:gravity="center"
+            android:text="Rekomendasi Cafe Untuk Kamu"
+            android:layout_below="@+id/textView"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

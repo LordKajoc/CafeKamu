@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".tambahdatacafenugas">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/judulcafenugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinssemi"
+                android:gravity="center"
+                android:text="Tambah Rekomendasi"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:id="@+id/judulcafenugas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judulcafenugas"
+                android:layout_marginTop="-9dp"
+                android:fontFamily="@font/poppinssemi"
+                android:gravity="center"
+                android:text="Cafe Nugas"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="wrap_content"
+                android:layout_height="129dp"
+                android:layout_below="@id/judulcafenugas2"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/pic_gambarcangkirkopi" />
+
+            <EditText
+                android:id="@+id/formKodecafenugas"
+                android:layout_width="110dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/pic"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Kd.Cafe"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formAlamatcafenugas"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formNamaCafenugas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Alamat"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/formLinkGmapCafeNugas"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formAlamatcafenugas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Link Gmap"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formHargaMulaicafenugas"
+                android:layout_width="176dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formDeskripsicafenugas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-105dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Harga Minimum"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formHargaMakscafenugas"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formAlamatcafenugas"
+                android:layout_marginLeft="-195dp"
+                android:layout_marginTop="57dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/formAlamatcafenugas"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Harga Maksimal"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formDeskripsicafenugas"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formHargaMakscafenugas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Deskripsi"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formNamaCafenugas"
+                android:layout_width="351dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/pic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/formKodecafenugas"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Nama Cafe"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/formRatingcafenugas"
+                android:layout_width="381dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/formAlamatcafenugas"
+                android:layout_marginLeft="-382dp"
+                android:layout_marginTop="168dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/formHargaMakscafenugas"
+                android:background="@drawable/radius_formwhite"
+                android:elevation="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Rating/10"
+                android:inputType="numberDecimal"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnOpencafenugas"
+                android:layout_width="245dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/formHargaMulaicafenugas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="132dp"
+                android:layout_marginRight="30dp"
+                android:alpha="0.90"
+                android:background="@drawable/radius_formwhite"
+                android:drawableRight="@drawable/ic_image"
+                android:fontFamily="@font/poppins"
+                android:paddingRight="15dp"
+                android:text="Select Picture . . ."
+                android:textAllCaps="false"
+                android:textColor="@color/grey" />
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/image_profilecafenugas"
+                android:layout_width="wrap_content"
+                android:layout_height="71dp"
+                android:layout_below="@+id/formHargaMulaicafenugas"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="119dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/btnOpencafenugas"
+                android:src="@drawable/ic_picimg" />
+
+            <Button
+                android:id="@+id/btnSubmitcafenugas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image_profilecafenugas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/radius_btnaksen"
+                android:fontFamily="@font/poppins"
+                android:text="Tambah Data Cafe"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

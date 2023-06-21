@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@color/main"
+    android:orientation="vertical">
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/imagerecyclercnong"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/pic_orangcafe"
+        />
+    <TextView
+        android:id="@+id/NamaCafeListViewCNong"
+        android:fontFamily="@font/poppins"
+        android:layout_toRightOf="@id/imagerecyclercnong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Judul"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextalamatrecyclerviewCNong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NamaCafeListViewCNong"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imagerecyclercnong"
+        android:fontFamily="@font/montserratthin"
+        android:text="Alamat -"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/AlamatlistviewCNong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NamaCafeListViewCNong"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/TextalamatrecyclerviewCNong"
+        android:fontFamily="@font/montserrat"
+        android:text="Alamat"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextRatingRecyclerViewCNong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextLinkGmapCafeCNong"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imagerecyclercnong"
+        android:fontFamily="@font/montserratthin"
+        android:text="Rating -"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/RatinglistViewCNong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinkGmaplistviewCNong"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/TextRatingRecyclerViewCNong"
+        android:fontFamily="@font/montserrat"
+        android:text="Rating"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/LinkGmaplistviewCNong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AlamatlistviewCNong"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/TextLinkGmapCafeCNong"
+        android:fontFamily="@font/montserrat"
+        android:text="LinkGmap"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textSelengkapnyaCNong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextLinkGmapCafeCNong"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imagerecyclercnong"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:fontFamily="@font/montserratthin"
+        android:text="Selengkapnya"
+        android:textColor="@color/accent2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TextLinkGmapCafeCNong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AlamatlistviewCNong"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imagerecyclercnong"
+        android:fontFamily="@font/montserratthin"
+        android:text="Link -"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/KodeCafelistviewCNong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/NamaCafeListViewCNong"
+        android:fontFamily="@font/poppins"
+        android:text="- Kode Cafe"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/HargaMulaiListViewCNong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextRatingRecyclerViewCNong"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/accent2"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imagerecyclercnong"
+        android:fontFamily="@font/poppinssemi"
+        android:text="Harga"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/deleterecyclercnong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/whiteblurred"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="VectorDrawableCompat" />
+</RelativeLayout>
